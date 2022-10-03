@@ -20,5 +20,5 @@ provider "aws" {
 
 resource "aws_s3_bucket" "s3-insa-lab-reda" {
   count = 10
-  bucket = format("bucket-%s-adhjkdn34dfs", count.index)
+  bucket = format("bucket-%s-adhjkdn34dfs", count.index) ## à changer pour que ça soit unique au niveau global 
 }
